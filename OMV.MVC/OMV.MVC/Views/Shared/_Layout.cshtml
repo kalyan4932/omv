@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <script src="~/Scripts/jquery-2.2.3.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/script.js"></script>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/style.css" rel="stylesheet" />
+</head>
+<body>
+    <!--Header Section-->
+    <div class="container omv-header-container hidden-sm hidden-xs">
+        <div class="row omv-header-top">
+            <div class="col-md-6 omv-header-top-left">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Social Media Channels</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Deutsche Version</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 omv-header-top-right">
+                OMV Websites : 
+                <select>
+                    <option value="0">com</option>
+                    <option value="0">at</option>
+                    <option value="0">de</option>
+                    <option value="0">cz</option>
+                    <option value="0">hu</option>
+                </select>
+
+                <input type="text" name="search" value="" placeholder="Search" />
+                <input type="button" name="btnGo" value="Go" />
+                &nbsp; 
+                <a href="#">Extended Search</a>
+            </div>
+        </div>
+        <div class="row omv-header-images">
+            <div class="col-md-6 omv-header-left-image">
+                <img src="~/Content/Images/HeaderTitleOmvCorporate_en.gif" />
+            </div>
+            <div class="col-md-6 omv-header-right-image">
+                <img src="~/Content/Images/HeaderLogoOmv_en.gif" />
+            </div>
+        </div>
+        
+    </div>
+
+    <!--Mobile Header Section-->
+    <div class="container visible-sm visible-xs omv-mobile-header-nav navbar-fixed-top">
+        <div class="col-sm-2 col-xs-2 omv-ham-nav">
+            <span class="glyphicon glyphicon-menu-hamburger"></span>
+        </div>
+        <div class="col-sm-8 col-xs-8 omv-mob-title">
+            OMV Group
+        </div>
+        <div class="col-sm-2 col-xs-2 omv-mob-search">
+            <span class="glyphicon glyphicon-search"></span>
+        </div>
+    </div>
+    <div class="col-sm-12 col-xs-12 omv-mob-nav">
+        <ul class="col-md-12 col-sm-12 col-xs-12">
+            <li><a href="#">About OMV</a></li>
+            <li><a href="#">Business Segments</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Investor Relations</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Jobs &amp; Career</a></li>
+            <li><a href="#">Purchasing</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+    </div>
+    <div class="col-sm-12 col-xs-12 omv-mob-search-screen">
+        <div class="row omv-mob-screen-cancel">
+            <span class="glyphicon glyphicon-remove"></span>
+        </div>
+        <div class="row omv-mob-screen-search">
+            <input type="text" name="searchScreenSearch" value="" placeholder="Search" />
+        </div>
+        <div class="row omv-mob-screen-search-go">
+            <input type="button" name="searchScreenSearchGo" value="GO"/>
+        </div>
+    </div>
+
+    <!--Top Nav Section-->
+    <div class="container hidden-sm hidden-xs">
+        <div class="row omv-top-nav-container">
+            <ul class="col-md-12 col-sm-12 col-xs-12">
+                <li><a href="#">About OMV</a></li>
+                <li><a href="#">Business Segments</a></li>
+                <li><a href="#">Sustainability</a></li>
+                <li><a href="#">Investor Relations</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Jobs &amp; Career</a></li>
+                <li><a href="#">Purchasing</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--Main Body-->
+    <div class="container">
+        <div class="row omv-main-body-container">
+            <div class="col-md-3 col-sm-12 col-xs-12">
+                <div class="omv-left-pane-container">
+                    a
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="omv-content-pane-container">
+                    dd
+                    @RenderBody()
+                </div>
+                
+            </div>
+            <div class="col-md-3 hidden-sm hidden-xs">
+                <div class="omv-right-pane-container">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

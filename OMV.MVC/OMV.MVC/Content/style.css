@@ -1,0 +1,262 @@
+﻿body {
+}
+
+.omv-header-container{
+    margin-top : 5px;
+}
+
+.omv-header-top-left ul{
+    padding : 0;
+}
+
+.omv-header-top-left ul li{
+    display : inline-block;
+    list-style-type : none;
+    margin-right : 10px;
+    font-size : small;
+}
+
+.omv-header-top-left ul li a{
+    display : block;
+    color : black;
+}
+
+.omv-header-top-left ul li a:hover{
+    text-decoration : none;
+    color : grey;
+}
+
+
+.omv-header-top-right{
+    font-size : small;
+    text-align : right;
+}
+
+.omv-header-top-right select{
+    width : 100px;
+    height : 20px;
+}
+
+.omv-header-top-right input[type='text']{
+    width : 150px;
+    height : 20px;
+    padding : 5px;
+}
+
+.omv-header-top-right input[type='button']{
+    border : none;
+    height : 20px;
+    background-color : #083275;
+    color : white;
+}
+
+.omv-header-top-right a:hover{
+    text-decoration : none;
+}
+
+.omv-header-top-right input[type='button']:hover{
+    box-shadow : 0 0 2px 0 #808080;
+}
+
+.omv-header-images{
+    margin-top : 10px;
+}
+
+.omv-header-right-image{
+    text-align : right;
+}
+
+.omv-top-nav-container{
+    margin-top : 20px;
+    text-align : center;
+    padding : 0;
+}
+
+.omv-top-nav-container ul{
+    padding : 0;
+    background-color : #083275;
+    color : white;
+}
+
+.omv-top-nav-container ul li{
+    list-style-type : none;
+    display : inline-block;
+    padding : 0;
+    margin : 0;
+}
+
+.omv-top-nav-container ul li a{
+    display : block;
+    color : white;
+    padding : 10px;
+    font-size : 1.1em;
+    transition-duration : 200ms;
+}
+
+@media only screen and (min-width: 1200px){
+    .omv-top-nav-container ul li a {
+        font-size : large;
+    }
+}
+
+.omv-top-nav-container ul li .active{
+    text-decoration : none;
+    background-color : white;
+    color : black;
+}
+
+/* unvisited link */
+.omv-top-nav-container ul li a:link {
+    text-decoration : none;
+}
+
+/* visited link */
+.omv-top-nav-container ul li a:visited {
+    text-decoration : none;
+}
+
+/* mouse over link */
+.omv-top-nav-container ul li a:hover {
+    text-decoration : none;
+    background-color : white;
+    color : black;
+}
+
+/* selected link */
+.omv-top-nav-container ul li a:active {
+    text-decoration : none;
+}
+
+.omv-left-pane-container{
+    min-height : 40px;
+    box-shadow : 0 0 10px 0 #cfcfcf;
+    margin-bottom : 10px;
+}
+
+.omv-content-pane-container{
+    height : 5900px;
+    box-shadow : 0 0 10px 0 #cfcfcf;
+}
+
+.omv-right-pane-container {
+    min-height : 150px;    
+    box-shadow : 0 0 10px 0 #cfcfcf;
+}
+
+.omv-mobile-header-nav{
+    background-color : #083275;
+    color : white;
+    padding : 0;
+    height : 60px;
+    font-size : x-large;
+    padding : 13px;
+    z-index : 10    ;
+}
+
+.omv-mob-title{
+    text-align : center;
+}
+
+.omv-ham-nav{
+    padding-left : 5px;
+}
+
+.omv-mob-nav{
+    position : relative;
+    background-color : #083275;
+    padding : 0;
+    z-index : 10;
+}
+
+.omv-mob-nav ul{
+    margin : 0;
+    padding : 20px;
+    width :100%;
+}
+
+.omv-mob-nav ul li{
+    width : 100%;
+}
+
+.omv-mob-nav ul li a{
+    width : 100%;
+    display : inline-block;
+    padding : 10px;
+    color : white;
+}
+
+/* unvisited link */
+.omv-mob-nav ul li a:link {
+    text-decoration : none;
+}
+
+/* visited link */
+.omv-mob-nav ul li a:visited {
+    text-decoration : none;
+}
+
+/* mouse over link */
+.omv-mob-nav ul li a:hover {
+    text-decoration : none;
+    background-color : white;
+    color : black;
+}
+
+/* selected link */
+.omv-mob-nav ul li a:active {
+    text-decoration : none;
+}
+
+
+.omv-main-body-container{
+    margin-top : 0px;
+    z-index : 5;
+}
+
+.omv-main-body-container div{
+    padding : 6px;
+}
+
+.omv-mob-nav{
+    display : none;
+    position : absolute;
+    top : 60px;
+}
+
+.omv-mob-search-screen{
+    position : absolute;
+    top : 0;
+    left : 0;
+    height : 100%;
+    width : 100%;
+    background-color : rgba(177, 177, 177, 0.95);
+    font-size : 26pt;
+    z-index : 10;
+    display:none;
+    
+}
+
+.omv-mob-screen-cancel{
+    text-align : right;
+    padding : 10px 15px;;
+    border : 0;
+}
+
+.omv-mob-screen-search input[type='text']{
+    width : 95%;
+    background-color : white;
+    padding : 10px;
+    border : 0;
+    margin : 10px;
+}
+
+.omv-mob-screen-search-go{
+    text-align : center;
+}
+
+.omv-mob-screen-search-go input[type='button']{
+    border : none;
+    background-color : #083275;
+    color : white;
+    width : 40%;
+}
